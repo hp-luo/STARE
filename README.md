@@ -9,6 +9,11 @@
 
 ---
 
+<div align="center">
+<img src="./images/method.png" width="90%"/>
+<p><em><b>Figure 1: Overview of STARE.</b> Guided by a four-quadrant decomposition of token-level entropy dynamics (top-left) and a batch-internal surprisal-quantile proxy that identifies entropy-critical tokens (top-right), STARE applies target-entropy-gated advantage reweighting in GRPO (bottom-left), stabilizing policy entropy where vanilla GRPO collapses (bottom-right).</em></p>
+</div>
+
 ## Overview
 
 Reinforcement Learning with Verifiable Rewards (RLVR) algorithms such as GRPO have emerged as the dominant post-training paradigm for complex reasoning in LLMs, yet commonly suffer from **policy entropy collapse** during training. We conduct a first-order gradient analysis of token-level entropy dynamics under GRPO and identify a **token-level credit assignment mismatch**: the per-token entropy variation decomposes into the product of the trajectory-level advantage and an entropy sensitivity function over the next-token distribution, yielding an **advantage–surprisal four-quadrant structure** and a **near-criticality property**.
@@ -21,10 +26,7 @@ Building on this analysis, we propose **STARE** (Surprisal-guided Token-level Ad
 
 **Key Results:** Across model scales from 1.5B to 32B and three task families (Short CoT, Long CoT, and Multi-Turn Tool Use), STARE sustains stable RL training over thousands of steps while maintaining policy entropy within the target band. On AIME24 and AIME25, STARE outperforms DAPO and other competitive baselines by **4%–8%** in average accuracy, with reflection tokens and response length growing in tandem, indicating sustained exploration–exploitation balance.
 
-<div align="center">
-<img src="./images/method.png" width="90%"/>
-<p><em><b>Figure 1: Overview of STARE.</b> Guided by a four-quadrant decomposition of token-level entropy dynamics (top-left) and a batch-internal surprisal-quantile proxy that identifies entropy-critical tokens (top-right), STARE applies target-entropy-gated advantage reweighting in GRPO (bottom-left), stabilizing policy entropy where vanilla GRPO collapses (bottom-right).</em></p>
-</div>
+
 
 <div align="center">
 <img src="./images/short_cot_training_dynamics.png" width="48%"/>

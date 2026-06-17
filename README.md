@@ -7,6 +7,8 @@
 <img src="./images/hunyuanlogo.png" height="100"/>
 </div>
 
+---
+
 <div align="center">
 <img src="./images/method.png" width="90%"/>
 <p><em><b>Figure 1: Overview of STARE.</b> Guided by a four-quadrant decomposition of token-level entropy dynamics (top-left) and a batch-internal surprisal-quantile proxy that identifies entropy-critical tokens (top-right), STARE applies target-entropy-gated advantage reweighting in GRPO (bottom-left), stabilizing policy entropy where vanilla GRPO collapses (bottom-right).</em></p>
@@ -27,12 +29,12 @@ Building on this analysis, we propose **STARE** (Surprisal-guided Token-level Ad
 Below we illustrate the RL training dynamics on two representative scenarios: Qwen2.5-7B Short CoT and Multi-Turn Tool-Use Agent.
 
 <div align="center">
-<img src="./images/short_cot_training_dynamics.png" width="80%"/>
+<img src="./images/short_cot_training_dynamics.png" width="85%"/>
 <p><em><b>Figure 2: Training dynamics (Qwen2.5-7B Short CoT).</b></em></p>
 </div>
 
 <div align="center">
-<img src="./images/training_dynamics_agent.png" width="80%"/>
+<img src="./images/training_dynamics_agent.png" width="85%"/>
 <p><em><b>Figure 3: Training dynamics (Multi-Turn Tool Use Agent).</b></em></p>
 </div>
 
@@ -177,7 +179,7 @@ Setting ω ≡ 1 recovers standard GRPO. Because ω > 0, STARE preserves all tok
 Across model scales from 1.5B to 32B and three task families (Short CoT, Long CoT, and Multi-Turn Tool Use), STARE sustains stable RL training over thousands of steps while maintaining policy entropy within the target band. On AIME24 and AIME25, STARE outperforms DAPO and other competitive baselines by **4%–8%** in average accuracy, with reflection tokens and response length growing in tandem, indicating sustained exploration–exploitation balance.
 
 <div align="center">
-<img src="./images/main_results.png" width="85%"/>
+<img src="./images/main_results.png" width="90%"/>
 <p><em><b>Table 1: Main experimental results.</b> Performance comparison across 1.5B–32B scales and three scenarios.</em></p>
 </div>
 

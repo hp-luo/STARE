@@ -10,8 +10,8 @@
 <br>
 
 <div align="center">
-<img src="./images/tsinghua_logo_from_pdf.png" height="150"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<img src="./images/hunyuanlogo.png" height="150"/>
+<img src="./images/tsinghua_logo_from_pdf.png" height="130"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="./images/hunyuanlogo.png" height="130"/>
 </div>
 
 ---

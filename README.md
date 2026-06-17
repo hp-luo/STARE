@@ -1,12 +1,5 @@
 <h1 style="text-align: center;">STARE: Surprisal-Guided Token-Level Advantage Reweighting for Policy Entropy Stability</h1>
 
-
-<div align="center">
-<!-- <a href="https://arxiv.org/abs/xxxx.xxxxx"><img src="https://img.shields.io/static/v1?label=Arxiv&message=Paper&color=red&logo=arxiv"></a>&nbsp;
-<a href="https://github.com/verl-project/verl/tree/v0.7.0"><img src="https://img.shields.io/static/v1?label=Framework&message=verl+v0.7.0&color=blue&logo=github"></a>&nbsp;
-<a href="https://hub.docker.com/layers/verlai/verl/vllm011.latest"><img src="https://img.shields.io/static/v1?label=Docker&message=Image&color=2496ED&logo=docker"></a>
-</div> -->
-
 <br>
 
 <div align="center">

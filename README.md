@@ -2,15 +2,16 @@
 
 
 <div align="center">
-<a href="https://arxiv.org/abs/xxxx.xxxxx"><img src="https://img.shields.io/static/v1?label=Arxiv&message=Paper&color=red&logo=arxiv"></a>&nbsp;
+<!-- <a href="https://arxiv.org/abs/xxxx.xxxxx"><img src="https://img.shields.io/static/v1?label=Arxiv&message=Paper&color=red&logo=arxiv"></a>&nbsp;
 <a href="https://github.com/verl-project/verl/tree/v0.7.0"><img src="https://img.shields.io/static/v1?label=Framework&message=verl+v0.7.0&color=blue&logo=github"></a>&nbsp;
 <a href="https://hub.docker.com/layers/verlai/verl/vllm011.latest"><img src="https://img.shields.io/static/v1?label=Docker&message=Image&color=2496ED&logo=docker"></a>
-</div>
+</div> -->
 
 <br>
 
 <div align="center">
-<img src="./images/tsinghua_logo.png" width="180"/>
+<img src="./images/tsinghua_logo.png" width="180"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="./images/hunyuanlogo.png" width="180"/>
 </div>
 
 ---

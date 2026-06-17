@@ -10,7 +10,7 @@
 <br>
 
 <div align="center">
-<img src="../../images/tsinghua_logo.png" width="180"/>
+<img src="./images/tsinghua_logo.png" width="180"/>
 </div>
 
 ---
@@ -28,18 +28,18 @@ Building on this analysis, we propose **STARE** (Surprisal-guided Token-level Ad
 **Key Results:** Across model scales from 1.5B to 32B and three task families (Short CoT, Long CoT, and Multi-Turn Tool Use), STARE sustains stable RL training over thousands of steps while maintaining policy entropy within the target band. On AIME24 and AIME25, STARE outperforms DAPO and other competitive baselines by **4%–8%** in average accuracy, with reflection tokens and response length growing in tandem, indicating sustained exploration–exploitation balance.
 
 <div align="center">
-<img src="../../images/method.png" width="90%"/>
+<img src="./images/method.png" width="90%"/>
 <p><em><b>Figure 1: Overview of STARE.</b> Guided by a four-quadrant decomposition of token-level entropy dynamics (top-left) and a batch-internal surprisal-quantile proxy that identifies entropy-critical tokens (top-right), STARE applies target-entropy-gated advantage reweighting in GRPO (bottom-left), stabilizing policy entropy where vanilla GRPO collapses (bottom-right).</em></p>
 </div>
 
 <div align="center">
-<img src="../../images/short_cot_training_dynamics.png" width="48%"/>
-<img src="../../images/training_dynamics_agent.png" width="48%"/>
+<img src="./images/short_cot_training_dynamics.png" width="48%"/>
+<img src="./images/training_dynamics_agent.png" width="48%"/>
 <p><em><b>Figure 2: Training dynamics.</b> Left: Qwen2.5-7B Short CoT; Right: Multi-Turn Tool Use Agent.</em></p>
 </div>
 
 <div align="center">
-<img src="../../images/main_results.png" width="85%"/>
+<img src="./images/main_results.png" width="85%"/>
 <p><em><b>Table 1: Main experimental results.</b> Performance comparison across 1.5B–32B scales and three scenarios.</em></p>
 </div>
 

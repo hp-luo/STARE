@@ -78,9 +78,7 @@ The training scripts evaluate on AIME24 and AIME25 by default. Modify the `test_
 We use [Qwen series](https://huggingface.co/Qwen/collections) models. Download example:
 
 ```bash
-huggingface-cli download Qwen/Qwen2.5-Math-7B \
-    --local-dir /root/model_path/Qwen2.5-Math-7B \
-    --resume-download
+huggingface-cli download Qwen/Qwen2.5-Math-7B --local-dir /root/model_path/Qwen2.5-Math-7B --resume-download
 ```
 
 ---
@@ -110,8 +108,8 @@ Default configuration (7B): `stare_enabled=True`, `stare_variant=O1`, `stare_top
 For **14B/32B** models, we recommend milder reweighting: `stare_reweight_w=1.05`, `stare_reweight_m=0.95`, and correspondingly increasing `max_response_length`.
 
 Variant descriptions:
-- **O1** (default): One-sided entropy amplification — applies W > 1 weight only to L+ (positive-advantage high-surprisal tokens), amplifying entropy-increasing signals
-- **C2**: Two-sided regulation — additionally applies M < 1 attenuation to L- (negative-advantage high-surprisal tokens), simultaneously reducing entropy-decreasing pressure
+- **O1** (default): One-sided entropy amplification: applies W > 1 weight only to L+ (positive-advantage high-surprisal tokens), amplifying entropy-increasing signals
+- **C2**: Two-sided regulation: additionally applies M < 1 attenuation to L- (negative-advantage high-surprisal tokens), simultaneously reducing entropy-decreasing pressure
 
 ### Distributed Training
 

@@ -75,7 +75,7 @@ The training scripts evaluate on AIME24 and AIME25 by default. Modify the `test_
 
 ## Base Models
 
-We use [Qwen series](https://huggingface.co/Qwen/collections) models. Download example:
+We use [Qwen](https://huggingface.co/Qwen/collections) series models. Download example:
 
 ```bash
 huggingface-cli download Qwen/Qwen2.5-Math-7B --local-dir /root/model_path/Qwen2.5-Math-7B --resume-download

@@ -187,3 +187,4 @@ Across model scales from 1.5B to 32B and three task families (Short CoT, Long Co
 ## Acknowledgments
 
 We thank the [verl](https://github.com/verl-project/verl) distributed RL framework, [Qwen](https://huggingface.co/Qwen) open-source models, and [DAPO](https://arxiv.org/abs/2503.14476), [DeepScaleR](https://huggingface.co/datasets/agentica-org/DeepScaleR-Preview-Dataset), [Skywork-OR1](https://huggingface.co/datasets/Skywork/Skywork-OR1-RL-Data), [Polaris](https://huggingface.co/datasets/POLARIS-Project/Polaris-Dataset-53K) for their open-source data. All competitive baselines can be easily reproduced within verl.
+

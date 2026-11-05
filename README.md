@@ -20,6 +20,7 @@
 
 ---
 
+## 🎉🎉🎉 **STARE has been accepted to NeurIPS 2026!**
 ## Overview
 
 Reinforcement Learning with Verifiable Rewards (RLVR) algorithms such as GRPO have emerged as the dominant post-training paradigm for complex reasoning in LLMs, yet commonly suffer from **policy entropy collapse** during training. We conduct a first-order gradient analysis of token-level entropy dynamics under GRPO and identify a **token-level credit assignment mismatch**: the per-token entropy variation decomposes into the product of the trajectory-level advantage and an entropy sensitivity function over the next-token distribution, yielding an **advantage–surprisal four-quadrant structure** and a **near-criticality property**.
